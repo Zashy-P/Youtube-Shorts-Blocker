@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts Blocker",
+  "version": "1.0",
+  "description": "Block YouTube Shorts",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
